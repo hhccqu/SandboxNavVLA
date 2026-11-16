@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SandboxNav-VLA: language-conditioned navigation and closed-loop control on a physical miniature-vehicle sandbox.">
+  <title>SandboxNav-VLA | Physical Sandbox Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav><a class="brand" href="#top">SandboxNav-VLA</a><div><a href="#platform">Platform</a><a href="#method">Method</a><a href="#results">Results</a><a href="#media">Videos</a><a class="button small" href="https://github.com/hhccqu/SandboxNavVLA">Code</a></div></nav>
+  <div class="hero-copy" id="top"><p class="eyebrow">VISION · LANGUAGE · PHYSICAL CONTROL</p><h1>Language-conditioned navigation<br>on a physical vehicle sandbox</h1><p class="lede">A SimLingo-based vision-language policy adapted for semantic navigation, history-aware trajectory prediction, and closed-loop miniature-vehicle control.</p><div class="actions"><a class="button" href="#platform">Explore the platform</a><a class="text-link" href="#media">Watch the experiments ↓</a></div><p class="release-note">Project page draft · links and trial videos will be added after review</p></div>
+</header>
+<main>
+  <section id="platform"><div class="section-head"><p class="eyebrow">01 / PHYSICAL TESTBED</p><h2>From a miniature city to repeatable experiments</h2><p>The sandbox combines a realistic road layout, controllable background vehicles, localization, and an ego vehicle driven through a real-time control loop.</p></div><img class="wide-image" src="assets/overview.png" alt="Overview of the miniature city sandbox, data collection and physical closed-loop evaluation"></section>
+  <section class="split" id="method"><div><p class="eyebrow">02 / POLICY</p><h2>Grounded in visual context and navigation commands</h2><p>The policy builds on SimLingo. The project adapts its driving interface to sandbox observations and semantic navigation, and adds temporal context for trajectory prediction. Predicted paths connect to the vehicle tracking controller.</p><ul><li>Current front-view image and causal ego speed</li><li>Map-derived navigation instruction</li><li>History-conditioned driving queries</li><li>Geometric path and time-waypoint outputs</li></ul></div><img class="method-image" src="assets/model.png" alt="SandboxNav-VLA model architecture"></section>
+  <section id="results"><div class="section-head"><p class="eyebrow">03 / EVALUATION</p><h2>Open-loop prediction and physical closed-loop trials</h2><p>Evaluation covers trajectory prediction and expert-reviewed physical trials across maneuvering, traffic interaction, and destination navigation. Metrics and trial definitions should match the paper exactly.</p></div><p class="callout">Results and the scenario-by-scenario video index will be linked here in the public release.</p></section>
+  <section id="media"><div class="section-head"><p class="eyebrow">04 / EXPERIMENT VIDEOS</p><h2>See the vehicle navigate</h2><p>Representative clips will be embedded from the project video channel. Full trial recordings and annotation links will accompany aggregate closed-loop statistics.</p></div><div class="video-placeholder">Experiment videos are being prepared for release.</div></section>
+  <section class="citation" id="code"><p class="eyebrow">CODE & CITATION</p><h2>Reproduce and build on the work</h2><p>The repository includes a preliminary selection of source code and evaluation results. Reproduction instructions, configurations, and hardware interfaces are in preparation.</p><a class="button" href="https://github.com/hhccqu/SandboxNavVLA">Open the code repository</a></section>
+</main>
+<footer><span>SandboxNav-VLA</span><span>Research project · publication links forthcoming</span></footer>
+</body></html>
