@@ -22,7 +22,7 @@ The project is built on the publicly released [SimLingo](https://github.com/Renz
 
 ## Media and privacy
 
-The website currently links no videos. Before release, use approved experiment recordings, retain complete clips for trials represented in aggregate metrics, and review faces, voices, school/lab signs, account names, and network/device details. Do not upload raw datasets or logs until consent, ownership, and privacy have been checked.
+The website embeds an author-provided [project demonstration video](https://www.youtube.com/watch?v=n9HuocT_FBs). When adding further recordings, retain complete clips for trials represented in aggregate metrics and review faces, voices, school/lab signs, account names, and network/device details. Do not upload raw datasets or logs until consent, ownership, and privacy have been checked.
 
 ## Citation
 
