@@ -24,6 +24,10 @@ The project is built on the publicly released [SimLingo](https://github.com/Renz
 
 The website embeds an author-provided [project demonstration video](https://www.youtube.com/watch?v=n9HuocT_FBs). When adding further recordings, retain complete clips for trials represented in aggregate metrics and review faces, voices, school/lab signs, account names, and network/device details. Do not upload raw datasets or logs until consent, ownership, and privacy have been checked.
 
+## Video hosting
+
+The page enables the YouTube iframe on ordinary web origins. Anonymous GitHub currently serves project pages in an opaque-origin CSP sandbox, whose restrictions also propagate to popups. In that environment the page instead presents a selectable video address for opening manually in a fresh browser tab; it does not attempt to relax the hosting service's sandbox. A first-party video asset would be needed to evaluate an in-page playback alternative for this host.
+
 ## Citation
 
 Citation metadata will be added after the author list and public paper version are finalized.

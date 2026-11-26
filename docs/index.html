@@ -17,12 +17,30 @@
   <section id="results"><div class="section-head"><p class="eyebrow">03 / EVALUATION</p><h2>Open-loop prediction and physical closed-loop trials</h2><p>Evaluation covers trajectory prediction and expert-reviewed physical trials across maneuvering, traffic interaction, and destination navigation. Metrics and trial definitions should match the paper exactly.</p></div><p class="callout">Results and the scenario-by-scenario video index will be linked here in the public release.</p></section>
   <section id="media">
     <div class="section-head"><p class="eyebrow">04 / EXPERIMENT VIDEOS</p><h2>See the vehicle navigate</h2><p>Watch the SandboxNav-VLA project demonstration below.</p></div>
-    <div class="video-frame">
-      <iframe src="https://www.youtube-nocookie.com/embed/n9HuocT_FBs?rel=0" title="SandboxNav-VLA project demonstration" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-frame" hidden>
+      <iframe data-src="https://www.youtube-nocookie.com/embed/n9HuocT_FBs?rel=0" title="SandboxNav-VLA project demonstration" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <p class="video-caption"><span>SandboxNav-VLA · Project demonstration</span><a href="https://www.youtube.com/watch?v=n9HuocT_FBs" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></p>
+    <div class="video-fallback" id="video-fallback">
+      <h3>Watch the project demonstration</h3>
+      <p>Copy this address, open a new browser tab, and paste it into the address bar to watch on YouTube.</p>
+      <label for="video-address">Video link</label>
+      <input id="video-address" type="text" readonly value="https://www.youtube.com/watch?v=n9HuocT_FBs" onclick="this.select()" spellcheck="false">
+    </div>
+    <p class="video-caption"><span>SandboxNav-VLA · Project demonstration</span><a class="video-external" href="https://www.youtube.com/watch?v=n9HuocT_FBs" target="_blank" rel="noopener noreferrer" hidden>Watch on YouTube ↗</a></p>
   </section>
   <section class="citation" id="code"><p class="eyebrow">CODE & CITATION</p><h2>Reproduce and build on the work</h2><p>The repository includes a preliminary selection of source code and evaluation results. Reproduction instructions, configurations, and hardware interfaces are in preparation.</p><a class="button" href="https://anonymous.4open.science/r/SandboxNavVLA-9CE4/">Open the code repository</a></section>
 </main>
 <footer><span>SandboxNav-VLA</span><span>Research project · publication links forthcoming</span></footer>
+<script>
+(function () {
+  // Anonymous hosting uses an opaque-origin CSP sandbox. Child frames and
+  // popups inherit its restrictions, so leave the manual-link card visible.
+  if (!window.origin || window.origin === 'null') return;
+  var frame = document.querySelector('#media iframe');
+  frame.src = frame.getAttribute('data-src');
+  document.querySelector('.video-frame').hidden = false;
+  document.getElementById('video-fallback').hidden = true;
+  document.querySelector('.video-external').hidden = false;
+}());
+</script>
 </body></html>
